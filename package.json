@@ -1,0 +1,28 @@
+{
+  "name": "webpack-hot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "npm run clear && webpack --mode development && npm run dev",
+    "build": "webpack --mode production",
+    "clear": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ztaintian/webpack-hot.git"
+  },
+  "author": "ztt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ztaintian/webpack-hot/issues"
+  },
+  "homepage": "https://github.com/ztaintian/webpack-hot#readme",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
